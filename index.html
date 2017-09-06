@@ -235,6 +235,132 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.parkpeace.com/2017/09/06/Privoxy使用/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Shengning Piao">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ParkPeace">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/09/06/Privoxy使用/" itemprop="url">Privoxy代理使用</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-06T11:00:48+08:00">
+                2017-09-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Privoxy代理使用"><a href="#Privoxy代理使用" class="headerlink" title="Privoxy代理使用"></a>Privoxy代理使用</h1><p>Privoxy 是一个web代理, 能够把socks5代理转为http代理并共享到局域网中. 下面介绍安装配置方法.</p>
+<h3 id="1-通过homebrew安装"><a href="#1-通过homebrew安装" class="headerlink" title="1. 通过homebrew安装:"></a>1. 通过homebrew安装:</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew install privoxy</div></pre></td></tr></table></figure>
+<h3 id="2-添加开机启动"><a href="#2-添加开机启动" class="headerlink" title="2. 添加开机启动"></a>2. 添加开机启动</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew services start privoxy</div></pre></td></tr></table></figure>
+<h3 id="3-编辑配置文件"><a href="#3-编辑配置文件" class="headerlink" title="3. 编辑配置文件"></a>3. 编辑配置文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim /usr/<span class="built_in">local</span>/etc/privoxy/config</div></pre></td></tr></table></figure>
+<p>forward-socks5t / 127.0.0.1:1080 设为你的socks5代理地址<br>listen-address 0.0.0.0:8118 设为你要监听的web代理端口</p>
+<h3 id="4-重启服务"><a href="#4-重启服务" class="headerlink" title="4. 重启服务"></a>4. 重启服务</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew services restart privoxy</div></pre></td></tr></table></figure>
+<p>这样你就成功建立了一个http代理服务器, 端口号为8118.</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://blog.parkpeace.com/2017/09/06/增加Mac下BlueStack的内存/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -362,132 +488,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.parkpeace.com/2017/09/06/Privoxy使用/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Shengning Piao">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ParkPeace">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/09/06/Privoxy使用/" itemprop="url">Privoxy代理使用</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-06T11:00:48+08:00">
-                2017-09-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="Privoxy代理使用"><a href="#Privoxy代理使用" class="headerlink" title="Privoxy代理使用"></a>Privoxy代理使用</h1><p>Privoxy 是一个web代理, 能够把socks5代理转为http代理并共享到局域网中. 下面介绍安装配置方法.</p>
-<h3 id="1-通过homebrew安装"><a href="#1-通过homebrew安装" class="headerlink" title="1. 通过homebrew安装:"></a>1. 通过homebrew安装:</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew install privoxy</div></pre></td></tr></table></figure>
-<h3 id="2-添加开机启动"><a href="#2-添加开机启动" class="headerlink" title="2. 添加开机启动"></a>2. 添加开机启动</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew services start privoxy</div></pre></td></tr></table></figure>
-<h3 id="3-编辑配置文件"><a href="#3-编辑配置文件" class="headerlink" title="3. 编辑配置文件"></a>3. 编辑配置文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vim /usr/<span class="built_in">local</span>/etc/privoxy/config</div></pre></td></tr></table></figure>
-<p>forward-socks5t / 127.0.0.1:1080 设为你的socks5代理地址<br>listen-address 0.0.0.0:8118 设为你要监听的web代理端口</p>
-<h3 id="4-重启服务"><a href="#4-重启服务" class="headerlink" title="4. 重启服务"></a>4. 重启服务</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">brew services restart privoxy</div></pre></td></tr></table></figure>
-<p>这样你就成功建立了一个http代理服务器, 端口号为8118.</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -546,7 +546,7 @@
             
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">Tags</span>
               
             </div>
